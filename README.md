@@ -2211,8 +2211,6 @@ COLOR_SCRIPT_REPO=https://api.github.com/repos/stark/Color-Scripts/contents/colo
 wget -q -O - $(curl -s $COLOR_SCRIPT_REPO | jq '.[] | "\(.path) \(.download_url)"' -r | shuf -n1 | cut -d " " -f2) | bash
 ```
 
-
-
 # Kitty - Themes
 
 
